@@ -1,0 +1,146 @@
+
+<link rel="stylesheet" href="button.scss">
+<div>
+    <div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="switch-slider"></span>
+        </label>
+    </div>
+    <div class="toggle normal">
+      <input id="normal" type="checkbox"/>
+      <label class="toggle-item" for="normal"></label>
+    </div>
+    <div class="toggle transparent">
+      <input id="transparent" type="checkbox"/>
+      <label class="toggle-item" for="transparent"></label>
+    </div>
+    <div class="toggle checkcross">
+      <input id="checkcross" type="checkbox"/>
+      <label class="toggle-item" for="checkcross">
+        <div class="check"></div>
+      </label>
+    </div>
+    <div class="toggle pancake-stack">
+      <input id="pancake" type="checkbox"/>
+      <label class="toggle-item" for="pancake">
+        <div class="pancakes">
+          <div class="pancake"></div>
+          <div class="pancake"></div>
+          <div class="pancake"></div>
+          <div class="butter"></div>
+        </div>
+      </label>
+    </div>
+    <div class="toggle dog-rollover">
+      <input id="doggo" type="checkbox"/>
+      <label class="toggle-item" for="doggo">
+        <div class="dog">
+          <div class="ear"></div>
+          <div class="ear right"></div>
+          <div class="face">
+            <div class="eyes"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div class="toggle checkbox-wrapper-3">
+      <input type="checkbox" id="cbx-3" />
+      <label for="cbx-3" class="label">
+        <span></span>
+      </label>
+    </div>
+    <div class="toggle checkbox-wrapper-5">
+      <div class="check">
+        <input id="check-5" type="checkbox">
+        <label for="check-5"></label>
+      </div>
+    </div>
+    <div class="toggle checkbox-wrapper-8">
+      <input class="tgl tgl-skewed" id="cb3-8" type="checkbox"/>
+      <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="cb3-8"></label>
+    </div>
+    <div class="toggle checkbox-wrapper-54">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="toggle checkbox-wrapper-55">
+      <label class="rocker rocker-small">
+      <input type="checkbox">
+      <span class="switch-left">Yes</span>
+      <span class="switch-right">No</span>
+    </label>
+    </div>
+    <div class="toggle checkbox-wrapper-34">
+      <input class='tgl tgl-ios' id='toggle-34' type='checkbox'>
+      <label class='tgl-btn' for='toggle-34'></label>
+    </div>
+  
+    <div class="toggle checkbox-wrapper-10">
+      <input class="tgl tgl-flip" id="cb5" type="checkbox" checked />
+      <label class="tgl-btn" data-tg-off="Nope" data-tg-on="Yeah!" for="cb5"></label>
+    </div>
+  
+    <div class="toggle basketball-hoop">
+      <input id="hoop" type="checkbox"/>
+      <label class="toggle-item" for="hoop">
+        <div class="ball__wrapper">
+          <div class="ball"></div>
+        </div>
+        <div class="hoop"></div>
+      </label>
+    </div>
+  </div>
+
+
+<style>
+    /* 隐藏原生的checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .switch-slider {
+  background-color: #2196F3;
+}
+
+input:checked + .switch-slider:before {
+  transform: translateX(26px);
+}
+    
+</style>
